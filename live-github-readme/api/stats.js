@@ -1,4 +1,4 @@
-// Hum module.exports ka istemaal kar rahe hain (CommonJS syntax)
+// Hum CommonJS syntax (module.exports) ka istemaal kar rahe hain
 module.exports = async (request, response) => {
 
     // Abhi ka current time lo
@@ -12,6 +12,7 @@ module.exports = async (request, response) => {
     });
 
     // --- Yahaan Asli Jaadu Hai (SVG Code) ---
+    // Hum text-based image (SVG) bana rahe hain.
     const svg = `
     <svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
         <rect width="100%" height="100%" rx="10" ry="10" fill="#282a36" />
