@@ -1,5 +1,5 @@
-// Yeh Vercel environment ke liye zaroori hai
-export default async function handler(request, response) {
+// Hum module.exports ka istemaal kar rahe hain (CommonJS syntax)
+module.exports = async (request, response) => {
 
     // Abhi ka current time lo
     const date = new Date();
@@ -12,7 +12,6 @@ export default async function handler(request, response) {
     });
 
     // --- Yahaan Asli Jaadu Hai (SVG Code) ---
-    // Hum text-based image (SVG) bana rahe hain.
     const svg = `
     <svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
         <rect width="100%" height="100%" rx="10" ry="10" fill="#282a36" />
@@ -35,4 +34,4 @@ export default async function handler(request, response) {
 
     // Image bhej do
     response.status(200).send(svg);
-}
+};
